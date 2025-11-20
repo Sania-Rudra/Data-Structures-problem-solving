@@ -6,6 +6,7 @@ class LabTask3{
         int rowNum=matrix.length;
         int colNum=matrix[0].length;
         int colSum[]=new int[colNum];
+        System.out.println(rowNum);
         for(int i=0;i<colNum;i++){
             int sum=0;
             for(int j=0;j<rowNum;j++){
@@ -38,6 +39,7 @@ class LabTask3{
             {9,3,3},
             {8,5,4}
         };
+        System.out.println(matrix[0].length);
         System.out.println("Given Matrix: ");
         Arr.print2D(matrix);
         System.out.println("\nExpected Output:\n[ -13 1 ]");
