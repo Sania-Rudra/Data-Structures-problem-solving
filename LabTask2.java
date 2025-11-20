@@ -8,6 +8,25 @@ class LabTask2{
         //For this task you don't need to create new arrays
 
         //TO DO
+        int row=matrix.length;
+        int col=matrix[0].length;
+        for(int j=0;j<col;j++){ //column wise iteration
+            if(j%2==0){  // check if its even first then go down.
+            for(int i=0;i<row;i++){
+                if((i+j)%2==0){ //even column, black tile.print it. 
+                    System.out.print(matrix[i][j]+" ");
+                }
+            }
+            }
+            else{ //odd column. start from bottom. go up
+                for(int i=row-1;i>=0;i--){
+                    if((i+j)%2==0){
+                        System.out.print(matrix[i][j]+" ");
+                    }
+                }
+            }
+            System.out.println();
+        }
 
     }
 
